@@ -486,7 +486,6 @@ ul {
 
 .social {
   margin-left: 70px;
-  margin-right: 93px;
 }
 
 .social-title,
@@ -530,9 +529,11 @@ ul {
 /* Подписывайтесь */
 
 .signup {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: auto;
+  margin-left: auto;
+}
+
+.signup-title {
+  display: block;
 }
 
 .signup-input {
