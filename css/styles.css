@@ -53,6 +53,21 @@ ul {
   padding-left: 15px;
 }
 
+.specifics__header--is-hidden,
+.signup__label--is-hidden,
+.portfolio-title--is-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .button {
   display: inline-block;
   font-family: 'Roboto';
@@ -225,18 +240,6 @@ ul {
 
 /* особенности */
 
-.hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
 
 .specifics__list {
   display: flex;
@@ -567,13 +570,13 @@ ul {
 }
 
 
-.backdrop.is-hidden {
+.backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.backdrop.is-hidden .modal {
+.backdrop--is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
